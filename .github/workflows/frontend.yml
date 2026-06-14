@@ -33,7 +33,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: frontend
-          path: frontend/Dockerfile
           push: true
           tags: 796115667251.dkr.ecr.us-east-1.amazonaws.com/dev/frontend:${{ github.run_number }}
           build-args: |
